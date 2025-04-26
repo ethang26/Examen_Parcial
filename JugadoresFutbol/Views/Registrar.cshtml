@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Jugador</title>
+</head>
+<body>
+    <h1>Registrar Jugador</h1>
+    <form action="https://tu-app.render.com/api/players" method="POST">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="age">Edad:</label>
+        <input type="number" id="age" name="age" required min="1">
+        
+        <label for="position">Posición:</label>
+        <input type="text" id="position" name="position" required>
+        
+        <label for="current_team">Equipo Actual:</label>
+        <select id="current_team" name="current_team">
+        </select>
+        
+        <button type="submit">Registrar</button>
+    </form>
+</body>
+</html>
